@@ -1,19 +1,20 @@
+{% load static %}  {# Load static files like CSS, images, and JS #}
 <!DOCTYPE html>
 <html>
 <head>
     <title>About Me</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    {% load static %}  {# Ensures access to static files in this template #}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">  {# Link to external CSS file from static folder #}
 </head>
 <body>
     <header>
         <h1>About Me</h1>
-        <a href="{% url 'index' %}">Back to Learning Journey</a>
+        <a href="{% url 'index' %}">Back to Learning Journey</a>  {# Link to homepage using Django URL name 'index' #}
     </header>
 
     <section>
-        <h3>{{ about.name }}</h3>
-        <p>{{ about.bio }}</p>
+        <h3>{{ about.name }}</h3>  {# Displays the 'name' field from the About model or context #}
+        <p>{{ about.bio }}</p>  {# Displays the 'bio' field from the About model or context #}
     </section>
 
     <footer>

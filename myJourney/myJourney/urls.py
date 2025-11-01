@@ -19,6 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pzJourney.urls')),  # Include your app URLs
+    path('', include('pzJourney.urls')),  # Routes requests to the pzJourney app (main site pages)
 ]
 

@@ -1,14 +1,14 @@
-{% load static %}
+{% load static %}  {# Load static files such as CSS, JS, and images #}
 <!DOCTYPE html>
 <html>
 <head>
     <title>My Learning Journey</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">  {# Link to external CSS file stored in the static folder #}
 </head>
 <body>
     <header>
         <h1>Learning Journey</h1>
-        <a href="{% url 'about_me' %}" class="about-link">About Me</a>
+        <a href="{% url 'about_me' %}" class="about-link">About Me</a>  {# Link to the About Me page using Django URL name #}
     </header>
 
     <section>
@@ -21,10 +21,10 @@
                 </tr>
             </thead>
             <tbody>
-                {% for entry in journey_entries %}
+                {% for entry in journey_entries %}  {# Loop through all learning journey entries passed from the view #}
                 <tr>
-                    <td>{{ entry.title }}</td>
-                    <td>{{ entry.description }}</td>
+                    <td>{{ entry.title }}</td>  {# Display each entry's title #}
+                    <td>{{ entry.description }}</td>  {# Display each entry's description #}
                 </tr>
                 {% endfor %}
             </tbody>
@@ -32,22 +32,22 @@
     </section>
 
     <!-- Admin Proof Section -->
-    <section class="admin-proof">
+    <section class="admin-proof">  {# Section showing proof screenshots for admin verification #}
         <h2>Admin Proof</h2>
         <div class="proof-images">
             <div class="proof-item">
                 <h3>Learning Journey</h3>
-                <img src="{% static 'images/learning_journey_proof.jpg' %}" alt="Learning Journey Proof">
+                <img src="{% static 'images/learning_journey_proof.jpg' %}" alt="Learning Journey Proof">  {# Display proof image for the Learning Journey page #}
             </div>
             <div class="proof-item">
                 <h3>About Me</h3>
-                <img src="{% static 'images/about_me_proof.jpg' %}" alt="About Me Proof">
+                <img src="{% static 'images/about_me_proof.jpg' %}" alt="About Me Proof">  {# Display proof image for the About Me page #}
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 My Journey. All rights reserved.</p>
+        <p>© 2025 My Journey. All rights reserved.</p>  {# Footer with copyright text #}
     </footer>
 </body>
 </html>
