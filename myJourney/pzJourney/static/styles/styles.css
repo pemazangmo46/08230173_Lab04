@@ -9,7 +9,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #4CAF50; /* green header */
+    background-color: #4CAF50;
     color: white;
     padding: 20px 40px;
     display: flex;
@@ -20,84 +20,6 @@ header {
 
 header h1 {
     margin: 0;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 20px;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-header nav a:hover {
-    background-color: rgba(255,255,255,0.2);
-}
-
-/* Table styling */
-table {
-    width: 90%;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-th, td {
-    padding: 15px 20px;
-    text-align: left;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1.1em;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #d1e7dd;
-    transition: 0.3s;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
-    margin-top: 40px;
-    box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
-}
-/* Body styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #fceabb, #f8b500);
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-/* Header styling */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between; /* Makes About Me go right */
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-header h1 {
-    margin: 0;
     font-size: 2em;
 }
 
@@ -115,168 +37,191 @@ header a.about-link:hover {
     background-color: #e68900;
 }
 
-/* Table styling */
-table {
-    width: 90%;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-th, td {
-    padding: 15px 20px;
-    text-align: left;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1.1em;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #d1e7dd;
-    transition: 0.3s;
-}
-
-/* Footer styling */
-footer {
+/* About Me section */
+section {
     text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
-    margin-top: 40px;
-    box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
-}
-/* Body styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #fceabb, #f8b500);
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-/* Header styling */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between; /* Makes About Me go right */
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-header a.about-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #ff9800;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-header a.about-link:hover {
-    background-color: #e68900;
-}
-
-/* Table styling */
-table {
-    width: 90%;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-th, td {
-    padding: 15px 20px;
-    text-align: left;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1.1em;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #d1e7dd;
-    transition: 0.3s;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
-    margin-top: 40px;
-    box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
-}
- /* Admin Proof Section */
-.admin-proof {
-    background: linear-gradient(to right, #f0f8ff, #e6f2ff);
     padding: 40px 20px;
+}
+
+/* Profile picture styling */
+.profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid #4CAF50;
+    margin-bottom: 20px;
+    object-fit: cover; /* Ensures image fits nicely */
+}
+
+/* Footer styling */
+footer {
     text-align: center;
-    margin-top: 50px;
-    border-radius: 15px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
 }
 
-.admin-proof h2 {
+/* Optional table styling */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #d1e7dd;
+    transition: 0.3s;
+}
+
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+header a.about-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff9800, #ffb74d);
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+header a.about-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* About Me Section */
+section#about {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 1.5s ease-in;
+}
+
+section h2 {
     font-size: 2em;
-    color: #003366;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 2px #aaa;
+    margin-bottom: 20px;
+    color: #4CAF50;
 }
 
-.proof-images {
+/* Profile picture */
+.profile-picture img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Cards container */
+.cards-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.proof-item {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    width: 300px;
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    width: 250px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.proof-item h3 {
-    color: #004080;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card i {
+    font-size: 2.5em;
+    color: #4CAF50;
     margin-bottom: 15px;
 }
 
-.proof-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.card h3 {
+    margin-bottom: 10px;
 }
 
-.proof-item img:hover {
-    transform: scale(1.05);
+.card p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+    font-size: 0.95em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
 }

@@ -1,24 +1,41 @@
-{% load static %}  {# Load static files like CSS, images, and JS #}
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>About Me</title>
-    {% load static %}  {# Ensures access to static files in this template #}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">  {# Link to external CSS file from static folder #}
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
-        <a href="{% url 'index' %}">Back to Learning Journey</a>  {# Link to homepage using Django URL name 'index' #}
-    </header>
 
-    <section>
-        <h3>{{ about.name }}</h3>  {# Displays the 'name' field from the About model or context #}
-        <p>{{ about.bio }}</p>  {# Displays the 'bio' field from the About model or context #}
-    </section>
+<header>
+    <h1>About Me</h1>
+    <a href="{% url 'index' %}" class="about-link">Back to Learning Journey</a>
+</header>
 
-    <footer>
-        <p>© 2025 My Journey. All rights reserved.</p>
-    </footer>
+<section id="about">
+    <div class="profile-picture">
+        <img src="{% static 'images/profile.jpg' %}"alt="{{ about.name }}">
+    </div>
+
+    <h2>{{ about.name }}</h2>
+    <p class="about-text">{{ about.bio }}</p>
+
+    <div class="cards-container">
+        {% for skill in about.skills.all %}
+        <div class="card">
+            <i class="{{ skill.icon }}"></i>
+            <h3>{{ skill.title }}</h3>
+            <p>{{ skill.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 My Journey. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
